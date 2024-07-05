@@ -4,7 +4,7 @@ import pandas as pd
 import streamlit as st
 
 df = pd.read_csv("Final_Project.csv")
-pickle_in = open('regression_model.pkl','rb')
+pickle_in = open('Deployment/regression_model.pkl','rb')
 reg = pickle.load(pickle_in)
 
 def predict_price(Area_SqFt,Floor_No,Bedroom):
